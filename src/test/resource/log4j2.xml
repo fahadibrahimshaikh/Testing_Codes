@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration strict="true">
+	<Appenders>
+	<Appender type ="Console" name="con">	
+	<Layout type= "PatternLayout"
+	pattern="%d{}HH:mm:ss.SSS[%t] %-7level %logger{36} %m%n">
+	</Layout>
+	</Appender>
+	<Appender type="File" name="file"
+	filename="C:\Users\Fahad Shaikh\OneDrive\Pictures\Screenshots\logger.log">
+	<Layout type="PatternLayout"
+	pattern="%d{}HH:mm:ss.SSS[%t] %-7level %logger{36} %m%n">
+	</Layout>
+	</Appender>
+	
+</Appenders>
+
+<Loggers>
+<Root level="all">
+<AppenderRef ref = "file"></AppenderRef>
+</Root>
+</Loggers>
+</Configuration>
